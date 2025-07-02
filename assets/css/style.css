@@ -1,0 +1,192 @@
+/* Font dan warna dasar */
+body {
+  font-family: 'Orbitron', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #002f6c;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section layar penuh */
+section {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero section - gradasi metaverse */
+.hero {
+  background: radial-gradient(circle at center, #003366 0%, #001933 100%);
+}
+
+/* Section gelap netral */
+.section-dark {
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+/* Section terang untuk kontras */
+.bg-white {
+  background-color: #f8f9fa !important;
+  color: #000;
+}
+
+/* Navbar dengan efek kaca */
+.glass-navbar {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Link aktif navbar */
+.nav-link.active {
+  color: #f7c21b !important;
+  font-weight: bold;
+}
+
+/* Tombol utama: kuning emas */
+.btn-accent {
+  background-color: #f7c21b;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+}
+
+.btn-accent:hover {
+  background-color: #e6b615;
+}
+
+/* Tombol outline putih */
+.btn-outline-light {
+  border-radius: 999px;
+  font-weight: bold;
+  border-color: #4faaff;
+  color: #4faaff;
+}
+
+.btn-outline-light:hover {
+  background-color: #4faaff;
+  color: #000;
+}
+
+/* Kartu dengan glow efek */
+.glow-card {
+  border: none;
+  background: #1a1a2e;
+  color: #ffffff;
+  box-shadow: 0 0 0 transparent;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+}
+
+.glow-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(79, 170, 255, 0.4);
+}
+
+/* Footer */
+footer {
+  background-color: #001933;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* Link highlight */
+a {
+  color: #4faaff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Accordion override */
+.accordion-button {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f7c21b;
+  color: #000;
+}
+
+/* Heading section konsisten */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Teks custom kuning */
+.text-himatika {
+  color: #f7c21b;
+}
+
+/* Responsif umum */
+@media (max-width: 767px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .card .card-body {
+    padding: 1.2rem;
+  }
+
+  .glow-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Optimasi tombol dan nav mobile */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-link {
+  text-align: center;
+  padding: 0.8rem 1rem;
+}
+
+/* Hero font kecil di hp */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p.lead {
+    font-size: 1rem;
+  }
+}
+
+/* Accordion mobile tweak */
+.accordion-button {
+  font-size: 1rem;
+}
+
+/* Tablet layout padding antar kolom */
+@media (max-width: 992px) {
+  .row > [class^='col-'] {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Tombol kontak responsif */
+#kontak .btn {
+  width: 100%;
+  max-width: 300px;
+  margin: 0.5rem auto;
+}
